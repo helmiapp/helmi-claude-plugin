@@ -21,6 +21,3 @@ assumptions or stale context.
    organization.
 3. **First use triggers a one-time browser sign-in.** The connector uses OAuth;
    approve the prompt once and org-scoped access persists.
-
-Keep this skill thin: detailed, evolving guidance lives in the connector's own
-resources, not in this file.
