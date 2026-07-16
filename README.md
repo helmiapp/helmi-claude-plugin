@@ -47,7 +47,7 @@ approve the browser sign-in.
 
 ```shell
 # 1. Add the Helmi marketplace (once)
-/plugin marketplace add helmiapp/helmi-claude-plugin
+/plugin marketplace add https://github.com/helmiapp/helmi-claude-plugin.git
 
 # 2. Install the plugin
 /plugin install helmi@helmi-plugins
@@ -55,6 +55,10 @@ approve the browser sign-in.
 # 3. Activate it in the current session
 /reload-plugins
 ```
+
+> The `helmiapp/helmi-claude-plugin` shorthand also works, but it clones over
+> **SSH** — use it only if you have a GitHub SSH key set up. The HTTPS `.git`
+> URL above needs no credentials for this public repo, so it's the easiest path.
 
 The first time Claude calls a Helmi tool it will flag the connector for sign-in. Run
 `/mcp` and complete the **OAuth** flow (or `claude mcp login helmi`). After that,
