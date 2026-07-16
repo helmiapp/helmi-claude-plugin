@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "helmi": {
+      "type": "http",
+      "url": "https://api.sigma.helmigroup.com/v1/mcp/all"
+    }
+  }
+}

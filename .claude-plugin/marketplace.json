@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "helmi-plugins",
+  "owner": {
+    "name": "Helmi"
+  },
+  "description": "Official Helmi plugins for Claude — connect Claude to your Helmi workspace.",
+  "plugins": [
+    {
+      "name": "helmi",
+      "source": "./plugins/helmi",
+      "description": "Connect Claude to Helmi — documents, contacts, meetings, notes, email, and portfolio data via the Helmi remote MCP connector.",
+      "category": "external-integrations"
+    }
+  ]
+}
