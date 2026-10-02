@@ -9,16 +9,21 @@ signs you in with a one-time browser approval.
 
 ## What's inside
 
-This plugin is intentionally **thin**. It contains:
-
 - A reference to the Helmi **remote MCP connector** (`https://api.sigma.helmigroup.com/v1/mcp/all`).
-- One small orientation skill (`using-helmi`) that points Claude at the connector and
-  its own guidance.
+- An orientation skill (`using-helmi`) that points Claude at the connector's own guidance.
+- Routing skills that tell Claude which Helmi tool answers which request: `search-knowledge`,
+  `email`, `projects`, `documents`, `tasks`. Detailed tool behavior stays on the server
+  (tool descriptions and connector resources), so it updates with each Helmi deploy.
+- Two commands: `/helmi:wrap-up` proposes notes, vault files and tasks from the session and
+  saves only what you approve; `/helmi:save <path>` files one document into the vault.
+- Two hooks (Claude Code and Cowork only; claude.ai chat ignores hooks):
+  - **End of session:** once per session, and only if files were written, Claude offers
+    to save decisions and documents to Helmi. Nothing is written without your yes.
+  - **Document written:** when Claude creates a new document (`.md`, `.pdf`, `.docx`,
+    `.pptx`, `.xlsx`, `.csv`, over 1.5 KB, outside code folders), it suggests one vault
+    location. At most twice per session. Hooks need `python3`.
 
-It deliberately does **not** bundle detailed how-to guidance. That lives on the MCP
-server itself (as connector resources) so it updates instantly for everyone the moment
-we deploy — no plugin reinstall needed. Plugin updates are reserved for rare structural
-changes.
+Run `./test.sh` to check the hook scripts.
 
 There are **no secrets or tokens** in this plugin. Access is granted per-user through
 standard OAuth at first use; the Helmi server issues an org-scoped token after you

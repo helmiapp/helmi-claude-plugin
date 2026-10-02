@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "helmi",
   "displayName": "Helmi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Connect Claude to Helmi — your organization's documents, contacts, meetings, notes, email, and portfolio data — through the Helmi remote MCP connector.",
   "author": {
     "name": "Helmi",
