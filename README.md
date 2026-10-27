@@ -12,7 +12,7 @@ signs you in with a one-time browser approval.
 - A reference to the Helmi **remote MCP connector** (`https://api.sigma.helmigroup.com/v1/mcp/all`).
 - An orientation skill (`using-helmi`) that points Claude at the connector's own guidance.
 - Routing skills that tell Claude which Helmi tool answers which request: `search-knowledge`,
-  `email`, `projects`, `documents`, `tasks`. Detailed tool behavior stays on the server
+  `email`, `projects`, `productions`, `documents`, `tasks`. Detailed tool behavior stays on the server
   (tool descriptions and connector resources), so it updates with each Helmi deploy.
 - Two commands: `/helmi:wrap-up` proposes notes, vault files and tasks from the session and
   saves only what you approve; `/helmi:save <path>` files one document into the vault.
