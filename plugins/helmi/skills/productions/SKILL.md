@@ -17,7 +17,8 @@ Call `get-project` by name before anything else. Read, in this order:
 2. **Open stage proposal.** Jev proposes a stage from the latest sources; it never moves the stage
    itself. A person confirms it. Show the proposal with its source and confidence. Confirm it with
    `update-project` (`stage`) only when the user agrees in this conversation. Never confirm on your
-   own, and never set a stage from your own reading of the record.
+   own, and never set a stage from your own reading of the record. If the user says the proposal is
+   wrong, dismiss it with `update-project` (`dismiss_stage_proposal: true`); the stage stays as it is.
 3. **Checklist** for the stage: each item is filled (value and source) or missing. Missing means
    no visible evidence. Calls and WhatsApp never reach Helmi, so ask the user instead of assuming
    it has not happened.
