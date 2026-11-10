@@ -11,6 +11,12 @@
       "source": "./plugins/helmi",
       "description": "Connect Claude to Helmi — documents, contacts, meetings, notes, email, and portfolio data via the Helmi remote MCP connector.",
       "category": "external-integrations"
+    },
+    {
+      "name": "helmi-media",
+      "source": "./plugins/helmi-media",
+      "description": "Helmi team only: Helmi Productions' media archive (footage, photos, interview transcripts, reel pitches). Needs a Helmi Google account.",
+      "category": "external-integrations"
     }
   ]
 }

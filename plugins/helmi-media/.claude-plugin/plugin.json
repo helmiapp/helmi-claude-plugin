@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "helmi-media",
+  "displayName": "Helmi Media Library",
+  "version": "0.4.0",
+  "description": "Helmi team only: search Helmi Productions' footage, photos and interview transcripts, and pitch reels from them. Sign-in needs a Helmi Google account.",
+  "author": { "name": "Helmi", "url": "https://helmigroup.com" },
+  "homepage": "https://media-library.helmi.com",
+  "keywords": ["helmi", "footage", "media", "reels", "archive"]
+}
