@@ -128,3 +128,14 @@ helmi-claude-plugin/
 │               └── SKILL.md       # thin orientation skill
 └── README.md
 ```
+
+## Helmi Media Library (Helmi team only)
+
+`helmi-media` connects Claude to Helmi Productions' archive of footage, photos and interview
+transcripts (`https://media-mcp.helmi.com/mcp`). It only signs in with a Helmi Google account
+(@helmi.com, @helmi.la, @helmigroup.com). Add this marketplace as above, then install
+**Helmi Media Library**. In Claude Code:
+
+```
+/plugin install helmi-media@helmi-plugins
+```

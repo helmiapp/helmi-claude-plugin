@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "helmi-media": {
+      "type": "http",
+      "url": "https://media-mcp.helmi.com/mcp"
+    }
+  }
+}
